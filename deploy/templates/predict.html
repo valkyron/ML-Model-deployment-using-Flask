@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/css/predict.css" />
+        <title> Landing Page </title>
+    </head>
+    <body>
+            <header>
+                <nav>
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link"><a href="visualize">Visualizations</a></li>
+                            <li class="nav-linkb"><a href="/">Home</a></li>
+                            <li class="nav-link"><a href="predict">Predict</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="dropdown">
+                        Dropdown
+                        <button class="fa fa-caret-down"></button>
+                        <ul id="list">
+                            <li><button class="list-item" value="sepal_length">Sepal Length</button></li>
+                            <li><button class="list-item" value="sepal_width">Sepal Width</button></li>
+                            <li><button class="list-item" value="petal_length">Petal Length</button></li>
+                            <li><button class="list-item" value="petal_width">Petal Width</button></li>
+                            <!-- <li><button class="list-item" value="heals">heals</button></li>
+                            <li><button class="list-item" value="killPoints">killPoints</button></li>
+                            <li><button class="list-item" value="kills">kills</button></li>
+                            <li><button class="list-item" value="killStreaks">killStreaks</button></li>
+                            <li><button class="list-item" value="longestKill">longestKill</button></li>
+                            <li><button class="list-item" value="matchDuration">matchDuration</button></li>
+                            <li><button class="list-item" value="numGroups">numGroups</button></li>
+                            <li><button class="list-item" value="rideDistance">rideDistance</button></li>
+                            <li><button class="list-item" value="roadKills">roadKills</button></li>
+                            <li><button class="list-item" value="swimDistance">swimDistance</button></li>
+                            <li><button class="list-item" value="teamKills">teamKills</button></li>
+                            <li><button class="list-item" value="vehicleDestroys">vehicleDestroys</button></li>
+                            <li><button class="list-item" value="walkDistance">walkDistance</button></li>
+                            <li><button class="list-item" value="weaponsAcquired">weaponsAcquired</button></li> -->
+                        </ul>
+                </div>
+
+                <div class="form-enter">
+                    <form action="http://localhost:5000/predict" method="POST">
+                        <div class="sepal_length active">
+                            <h1> Sepal Length </h1>
+                            <input type="text" value="6" name="sepal_length" required />
+                        </div>
+                        <div class="sepal_width">
+                            <h1> Sepal Width </h1>
+                            <input type="text" value="3" name="sepal_width" required />
+                        </div>
+                        <div class="petal_length">
+                            <h1> Petal Length </h1>
+                            <input type="text" value="4" name="petal_length" required />
+                        </div>
+                        <div class="petal_width">
+                            <h1> Petal Width </h1>
+                            <input type="text" value="2" name="petal_width" required />
+                        </div>
+                        <!-- <div class="heals">
+                            <h1> Heals </h1>
+                            <input type="text" value="0" name="species" required />
+                        </div> -->
+                        <!-- <div class="killPoints">
+                            <h1>Kill Points</h1>
+                            <input type="text" value="0" name="killPoints" required />
+                        </div>
+                        <div class="kills">
+                            <h1> Kills </h1>
+                            <input type="text" value="1" name="kills" required />
+                        </div>
+                        <div class="killStreaks">
+                            <h1>Kills Streaks</h1>
+                            <input type="text" value="1" name="killStreaks" required />
+                        </div>
+                        <div class="longestKill">
+                            <h1>Longest Kill</h1>
+                            <input type="text" value="58.53" name="longestKill" required />
+                        </div>
+                        <div class="matchDuration">
+                            <h1>Match Duration</h1>
+                            <input type="text" value="1424" name="matchDuration" required />
+                        </div>
+                        <div class="numGroups">
+                            <h1>Num Groups</h1>
+                            <input type="text" value="95" name="numGroups" required />
+                        </div>
+                        <div class="rideDistance">
+                            <h1>Ride Distance</h1>
+                            <input type="text" value="0" name="rideDistance" required />
+                        </div>
+                        <div class="roadKills">
+                            <h1>Road Distance</h1>
+                            <input type="text" value="0" name="roadKills" required />
+                        </div>
+                        <div class="swimDistance">
+                            <h1>Swim Distance</h1>
+                            <input type="text" value="0" name="swimDistance" required />
+                        </div>
+                        <div class="teamKills">
+                            <h1>Team Kills</h1>
+                            <input type="text" value="0" name="teamKills" required />
+                        </div>
+                        <div class="vehicleDestroys">
+                            <h1>Vehicle Destroys</h1>
+                            <input type="text" value="0" name="vehicleDestroys" required />
+                        </div>
+                        <div class="walkDistance">
+                            <h1>Walk Distance</h1>
+                            <input type="text" value="49.75" name="walkDistance" required />
+                        </div>
+                        <div class="weaponsAcquired">
+                            <h1>Weapons Acquired</h1>
+                            <input type="text" value="2" name="weaponsAcquired" required />
+                        </div> -->
+                        <button type="submit">Test</button>
+                    </form>
+                </div>
+
+                <!-- <div class="predict innactive">
+                    <h1>Predicted class: Bug</h1>
+                </div> -->
+
+                <div style="color: white;" class="result">
+                    {{ prediction_text}}
+                </div>
+            </header>
+    </body>
+    <script src="../static/js/predict.js"> </script>
+    </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/visualize.css" />
+        <title> Landing Page </title>
+    </head>
+    <body>
+        
+        <!-- particles.js container -->
+        <div id="particles-js">
+                <nav>
+                    <div class="nav-links">
+                        <ul>
+                            <li class="nav-link"><a href="visualize">Visualizations</a></li>
+                            <li class="nav-linkb"><a href="/">Home</a></li>
+                            <li class="nav-link"><a href="predict">Predict</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+            <div class="vid">
+                <video class="source" width="600" controls muted>
+                    <source src="../static/vids/sunburst.mp4" type="video/mp4">
+                </video>
+
+                <div class="vid-text">
+                    <h1>Sunburst Plot with plotly.express</h1>
+                    <p>Sunburst plots visualize hierarchical data spanning outwards radially from root to leaves. 
+                        The sunburst sector hierarchy is determined by the entries in labels (names in px.sunburst) and in parents. 
+                        The root starts from the center and children are added to the outer rings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h1> Bars, Heatmaps and more.. </h1>
+
+            <div class="images">
+                <figure>
+                    <img src="../static/images/box.png" class="first-image" alt="none" />
+                    <figcaption>sns.boxplot </figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/images/hbar.png" class="first-image" alt="none" />
+                    <figcaption>plt.hbar</figcaption>
+                </figure>
+                <figure>
+                    <img src="../static/images/heat.png" class="first-image" alt="none" />
+                    <figcaption>sns.heatmap</figcaption>
+                </figure>
+            </div>
+
+            <p>
+                A <b>BoxPlot</b> (or box-and-whisker plot) shows the distribution of quantitative data in a way that facilitates 
+                comparisons between variables or across levels of a categorical variable. 
+                The box shows the quartiles of the dataset while the whiskers extend to show the rest of the distribution, 
+                except for points that are determined to be “outliers” using a method that is a function of the inter-quartile range.
+            </p>
+            <br>
+            <p>
+                <b>Horizontal Bars</b> display data grouped by a nominal variable a variable that has long labels, 
+                you may want to display those groupings horizontally to aid in readability.
+                The bars are positioned at y with the given alignment. 
+                Their dimensions are given by width and height. The horizontal baseline is left (default 0).
+            </p>
+            <br>
+            <p>
+                <b>Heat Maps</b> display numeric tabular data where the cells are colored depending upon the contained value. 
+                Heat maps are great for making trends in this kind of data more readily apparent, particularly when the data is 
+                ordered and there is clustering.
+            </p>
+        </div>
+        
+
+        <!-- scripts -->
+        <script src="../static/js/particles.js"></script>
+        <script src="../static/js/app.js"></script>
+
+        <main>
+        </main>
+    </body>
+</html>
