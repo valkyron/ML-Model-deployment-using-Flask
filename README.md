@@ -16,7 +16,6 @@ Also, I had seen a [post](https://www.linkedin.com/posts/chayankathuria_python-m
 
 ## Features
 
-## Implementation
 The website consists of 3 tabs: *Home, Predict, Visualize*
 <br> __Home__: Gives a clear description of the website and its working.
 
