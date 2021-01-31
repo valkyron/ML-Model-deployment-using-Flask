@@ -20,11 +20,11 @@ The website consists of 3 tabs: *Home, Predict, Visualize*
 <br> __Home__: Gives a clear description of the website and its working.
 
 
-![Home page](/images/pagehome.PNG)
+![Home page](/images/pageHome.gif)
 
 <br> __Predict__: With its earier-to-use interface lets end user to input prediction attributes for the pretrained-model to predict, in this case, a [KNN Logistic Regression Model claassifying flower species accurately](/deploy/model.py).   
 <br>
-![Predict page](/images/pagePredict.PNG)
+![Predict page](/images/pagePredict.gif)
 
 <br> __Visualization__: Shows data visulizations and an interactive interface.    
 
